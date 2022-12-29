@@ -1,0 +1,73 @@
+// Create breakpoints
+@mixin media($param1, $param2: false) {
+
+  $declaration: "only screen and (min-width: #{$param1})";
+
+  @if ($param2 != false) {
+    $declaration: "only screen and (min-width: #{$param1}) and (max-width: #{$param2})";
+  }
+
+  @media #{$declaration} {
+    @content;
+  }
+
+}
+
+/// Mixin helper to output vendor prefixes
+/// @access public
+/// @author HugoGiraudel
+/// @param {String} $property - Unprefixed CSS property
+/// @param {*} $value - Raw CSS value
+/// @param {List} $prefixes - List of prefixes to output
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value; }
+  #{$property}: $value;
+}
+
+//Mixin for Floats
+@mixin float($float: left, $position: relative){
+  float:$float;
+  position:$position; }
+
+// Button Mixins
+@mixin basic_btn($primary: $lead-blue, $alt: $white, $border-width: 1) {
+  background-color: $primary;
+  border: #{$border-width}px solid transparent;
+  &:hover {
+    background-color: $alt;
+    border-color: $primary;
+    color: $primary;
+  }
+}
+@mixin basic_btn_invert($primary: $lead-blue, $alt: $white, $border-width: 1) {
+  background-color: $alt;
+  border: #{$border-width}px solid $primary;
+  color: $primary;
+  &:hover {
+    background-color: $primary;
+    border-color: transparent;
+    color: $alt;
+  }
+}
+@mixin empty_btn($primary: $themeBlue, $hover-color: $themeRed, $border-width: 3) {
+  @include prefix(box-shadow, 0 0 0 transparent, o ms moz webkit);
+  background-color: transparent;
+  border: #{$border-width}px solid transparent;
+  color: $primary;
+  span:after {
+    color: mix($white, $primary, 40%);
+    content: '\f105';
+    font:{
+      family: "FontAwesome";
+    }
+    margin-left: 5px;
+  }
+  &:hover {
+    border-color: $hover-color;
+    color: $hover-color;
+    span:after {
+      color: $hover-color;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.scrollTop {
+  background: transparent;
+  border: none;
+  bottom: 5%;
+  display: inline-block;
+  padding: 0;
+  position: fixed;
+  right: 5%;
+  z-index: 10;
+  &:focus {
+    outline: none;
+  }
+  #IconScrollTop {
+    fill: $themeSubtleBlue;
+    height: 45px;
+    opacity: .7;
+    width: 45px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

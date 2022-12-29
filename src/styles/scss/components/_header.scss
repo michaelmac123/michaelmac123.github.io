@@ -1,0 +1,134 @@
+.header {
+  background-image: linear-gradient(to right, $white, rgba($white, 0));
+  padding: 50px 0 10px 0;
+  position: relative;
+  @include media($desktop-small) {
+    min-height: 500px;
+    padding-top: 120px;
+  }
+  &:after {
+    background:{
+      position: top right;
+      size: contain;
+      repeat: no-repeat;
+    }
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    opacity: .25;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    @include media($desktop-small) {
+      background:{
+        position: center center;
+        size: cover;
+      }
+    }
+  }
+  .ico-mm {
+    left: -7px;
+    position: relative;
+    g {
+      fill: $themeDarkBlue;
+    }
+  }
+  &-container {
+    padding: 40px 0;
+    @include media($desktop-small) {
+      padding: 70px 0 0 0;
+      text-align: left;
+    }
+  }
+  &-title {
+    color: $fontDarkBlue;
+    font:{
+      size: 3rem;
+      weight: 700;
+    }
+    margin:{
+      top: 0;
+      bottom: .5rem;
+    }
+    padding-top: 0rem;
+    text-transform: uppercase;
+    @include media($desktop-small) {
+      padding-top: 1rem;
+    }
+  }
+  &-subtitle {
+    color: $fontDarkBlue;
+    font:{
+      size: 1.75rem;
+      weight: 100;
+    }
+    margin-top: 0;
+    @include media($desktop-small) {
+      width: 90%;
+      padding:{
+        bottom: 1rem;
+      }
+    }
+  }
+  &-closing-title {
+    color: $themeSubtleBlue;
+    font:{
+      size: 4rem;
+      weight: 300;
+    }
+    margin: 30px 0;
+  }
+  &-content {
+    color: $themeDarkBlue;
+    font:{
+      size: 2.5rem;
+      weight: 300;
+    }
+    width: 90%;
+  }
+  &-btn-group {
+    margin-top: 30px;
+  }
+  &-cta {
+    color: $themeBlue;
+    display: block;
+    font:{
+      size: 37px;
+      size: 2.5rem;
+    }
+    margin-top: 20%;
+    text-align: center;
+    @include media($desktop-small) {
+      font-size: 2.75rem;
+      margin-top: 0;
+      &:before {
+        content: "";
+        display: block;
+        border-top: 1px solid rgba($themeSubtleBlue, .35);
+        margin: 20px 0;
+      }
+    }
+    small {
+      color: $themeDarkBlue;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  &-list {
+    text-align: left;
+    margin: 10px 60px;
+    list-style-type: square;
+    width: 70%;
+    @include media($desktop-small) {
+      margin: 0;
+    }
+    li {
+      font:{
+        size: 1rem;
+        weight: 300;
+      }
+      padding: 5px 0;
+    }
+  }
+}

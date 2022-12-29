@@ -1,0 +1,121 @@
+// hamburger menu
+.c-hamburger {
+  float: left;
+  width: 21px;
+  height: 15px;
+  margin: 19px 0 0 30px;
+  padding: 0;
+  display: block;
+  overflow: visible;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  z-index: 1;
+
+  @include media($desktop-medium) {
+    display: none;
+    margin: 28px 0 0 30px;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000;
+    border-radius: 1px;
+  }
+
+  span::before,
+  span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 1px;
+    content: "";
+  }
+}
+
+.join-now-mobile {
+  display: block;
+  float: right;
+  margin: 21px 30px 0 0;
+  font-size: 13px;
+  color: #ff0026;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: opacity 0.5s;
+  opacity: 0;
+
+  &.show{
+    opacity: 1;
+  }
+
+  @include media($desktop-medium) {
+    display: none;
+    margin: 32px 30px 0 0;
+  }
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+  span {
+    &::before,
+    &::after {
+      border-radius: 2px;
+      transition-duration: 0.3s;
+      transition-delay: 0s, 1s;
+      // transition: all .3s 0;
+    }
+
+    &::before {
+      top: -5px;
+      transition: top .3s .3s, transform .3s 0s;
+    }
+
+    &::after {
+      bottom: -5px;
+      transition: bottom .3s .3s, transform .3s 0s;
+    }
+  }
+
+  &.is-active {
+    background-color: transparent;
+    span {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        background-color: #000;
+      }
+
+      &::before {
+        top: 0;
+        transition: top .3s 0s, transform .3s .3s;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 0;
+        transition: bottom .3s 0s, transform .3s .3s;
+        transform: rotate(-45deg);
+
+      }
+    }
+  }
+}

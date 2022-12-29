@@ -1,0 +1,53 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../components/components";
+@import "../pages/pages";
+@import "../lib/lib";
+
+html, body, #root {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  font-family: $Montserrat;
+  width: 100%;
+}
+.app {
+  text-align: center;
+  width: 100%
+}
+.link-text {
+  color: $themeBlue;
+  &:hover {
+    color: $themeDarkBlue;
+    text-decoration: none;
+  }
+}
+.block {
+  display: block;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.item + .item {
+  margin-top: 11px;
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+   display: none;
+}
+
+.open .answer {
+  display: block;
+}

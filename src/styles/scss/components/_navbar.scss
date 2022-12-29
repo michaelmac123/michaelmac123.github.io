@@ -1,0 +1,252 @@
+.nav-banner {
+  background: $white;
+  border-bottom: 1px solid #8f9ba2;
+  display: block;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transition: height 0.5s;
+  @include media($desktop-medium) {
+    background: rgba($white, .98);
+    height: 70px;
+  }
+  &.scroll {
+    @include prefix(box-shadow, 0px 1px 3px 0px rgba($black,0.25), o ms moz webkit);
+    border-color: #b5c2ca;
+  }
+  .nav-banner-container {
+    position: relative;
+    .logos {
+      h1 {
+        background:{
+          image: url('../../images/icons/mm-logo.svg');
+          size: 35px 35px;
+          repeat: no-repeat;
+        }
+        height: 0;
+        display: block;
+        left: calc( 50% - 12px );
+        padding-top: 45px;
+        position: absolute;
+        overflow: hidden;
+        top: 8px;
+        transform: translate(-50%, 0) scale(1);
+        transition: transform 0.5s;
+        width: 45px;
+        z-index: 1;
+
+        @include media($desktop-small) {
+          background-size: 45px 45px;
+          top: 13px;
+        }
+
+        a {
+          width: 100%;
+          padding-top: 100%;
+          height: 0;
+          overflow: hidden;
+          display: block;
+          position: absolute;
+          top: 0;
+        }
+      }
+
+      .logo2 {
+        background:{
+          image: url('../../images/icons/mm-logo-invert.svg');
+          size: 35px 35px;
+          repeat: no-repeat;
+        }
+        display: block;
+        height: 0;
+        left: calc( 50% - 12px );
+        overflow: hidden;
+        padding-top: 45px;
+        position: absolute;
+        top: 6px;
+        width: 45px;
+        z-index: 1;
+        transform: translate(-50%, 0) scale(0);
+        transition: transform 0.5s;
+        @include media($desktop-small) {
+          background-size: 45px 45px;
+          top: 13px;
+        }
+      }
+
+      &.min {
+        h1 {
+          transform: translate(-50%, 0) scale(0);
+        }
+
+        .logo2 {
+          transform: translate(-50%, 0) scale(1);
+        }
+      }
+    }
+
+    nav {
+      background: rgba($themeDarkBlue, .98);
+      left: 0;
+      min-height: 0;
+      opacity: 0;
+      visibility: hidden;
+      position: fixed;
+      top: 50px;
+      transition: opacity .3s, visibility .5s, min-height 0s .5s;
+      width: 100%;
+      &.element-active {
+        min-height: calc(100% - 50px);
+        opacity: 1;
+        transition: opacity .3s, visibility .5s, min-height 0s 0s;
+        visibility: visible;
+      }
+      @include media($desktop-medium) {
+        background: none;
+        display: block !important;
+        left: 50%;
+        margin: 0 auto;
+        max-width: 1280px;
+        min-height: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        transform: translate(-50%, 0);
+        visibility: visible;
+        width: 100%;
+      }
+      .nav {
+        &-container {
+          left: 50%;
+          position: absolute;
+          top: calc( 100vh - 65% );
+          transform: translate(-50%, -50%);
+          @include media($desktop-medium) {
+            left: auto;
+            position: static;
+            top: auto;
+            transform: none;
+          }
+        }
+      }
+
+      ul.nav-list {
+        font-size: 17px;
+        letter-spacing: 2.62px;
+        line-height: 56px;
+        margin: 0;
+        padding: 0;
+        @include media($desktop-medium) {
+          color: #24333B;
+          display: flex;
+          font-size: 12.5px;
+          letter-spacing: 2px;
+          line-height: 1;
+          overflow: hidden;
+        }
+        li {
+          list-style: none;
+          text-align: center;
+          padding: 10px 0;
+          @include media($desktop-medium) {
+            display: inline-block;
+            line-height: 1;
+            padding: 0;
+            position: relative;
+            text-align: left;
+          }
+          a {
+              color: $white;
+              font-weight: 500;
+              text-decoration: none;
+              text-transform: uppercase;
+              @include media($desktop-medium) {
+                color: $fontDarkBlue;
+                height: 71px;
+                display: block;
+                box-sizing: border-box;
+                position: relative;
+                padding-top: 30px;
+                transition: color 0.5s, background-color 0.5s;
+
+                &:hover,
+                &.current {
+                  color: $themeRed;
+                  opacity: 1;
+
+                  hr {
+                    width: 100%;
+                    background: $themeRed;
+                  }
+                }
+              }
+              &::after {
+                background: $themeRed;
+                bottom: 15px;
+                content: '';
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, 0);
+                transition: width 0.5s;
+                width: 0%;
+              }
+              &:hover {
+                color: $themeRed;
+                &:after {
+                  width: 100%;
+                }
+              }
+              &.active {
+                color: $themeRed;
+                &::after {
+                  width: 100%;
+                }
+              }
+              &.empty-anchor {
+                padding-top: 12px;
+                &:after {
+                  width: 0;
+                }
+              }
+            }
+        }
+
+        &#menu-top-left {
+          margin-top: 50px;
+        }
+
+        @include media($desktop-medium) {
+          &#menu-top-left {
+            float: left;
+            margin-top: 0;
+
+            li {
+              margin: 0 0 0 60px;
+
+              &:first-child {
+                margin: 0;
+              }
+            }
+          }
+
+          &#menu-top-right {
+            float: right;
+            li {
+              margin: 0 0 0 80px;
+
+              &:first-child {
+                margin: 0;
+              }
+              &:last-child {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

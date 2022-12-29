@@ -1,0 +1,19 @@
+.flex-container {
+    
+}
+.flex-column {
+  display: flex;
+  align-items: stretch;
+  flex-flow: column wrap;
+  &:first-of-type {
+    width: 70%;
+  }
+  &:nth-of-type(2) {
+    margin-left: 20px;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}

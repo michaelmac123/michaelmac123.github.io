@@ -1,0 +1,119 @@
+.about {
+  &-content {
+    color: $themeBlue;
+    padding: 0 0 0 .75em; }
+  &-list-circles {
+    @include float;
+    margin-top: 2em;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    &:after {
+      border-top: none;
+      content: '';
+      display: block;
+      position: absolute;
+      right:  -50px;
+      bottom: 64%;
+      width: 0;
+      z-index: -1;
+      @include media($desktop-small) {
+        border-top: 1px solid $themeDarkBlue;
+        width: 50%;
+      }
+    }
+    &:last-of-type:after {
+      border:none;
+    }
+    @include media($desktop-small) {
+      width: 15.5%;
+    }
+  }
+
+  &-list-circles-links {
+    @include prefix(border-radius, 50%, moz wekit o);
+    @include prefix(transition,all 500ms ease, moz webkit o ms);
+    background-color: $fontDarkBlue;
+    border: 0px solid $fontDarkBlue;
+    display: inline-block;
+    padding: 25px;
+    width: 40%;
+    @include media($desktop-small) {
+      width: 60%;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      @include prefix(border-radius, 50%, moz wekit o);
+      @include prefix(transition,all 500ms ease, moz webkit o ms);
+      @include prefix(box-shadow,0 0 15 rgba($fontDarkBlue, .5), moz webkit o ms);
+      background-color: $themeRed;
+      border: 10px solid $fontDarkBlue;
+    }
+    &.current {
+      background-color: $white;
+      border: 10px solid rgba($fontDarkBlue, .95);
+      svg {
+        fill:$fontDarkBlue;
+      }
+      &:hover {
+        @include prefix(box-shadow,0 0 0 transparent, moz webkit o ms);
+        cursor: default;
+      }
+    }
+  }
+  &-svg {
+    fill: $white; }
+  &-list-title {
+    color: #49545a;
+    display: block;
+    font:{
+      family: $Montserrat;
+      size: 1.25em;
+      weight: 300;
+    }
+    margin-top: 1em;
+    padding: 0 .75rem;
+  }
+  &-ordered-list {
+    li {
+        color: #68747B;
+        font:{
+          size: 1rem;
+          weight: 300;
+        }
+      }
+    }
+  &-list-tubes {
+    padding-left: 1em;
+    text-align: center;
+    width: 100%;
+    li {
+      @include prefix(border-radius, 25px, moz wekit o ms);
+      background-color: rgba($themeRed, .85);
+      color: $white;
+      font-weight: 300;
+      margin: .25em 0;
+      padding: 5px 15px;
+    }
+  }
+  &-box-panel {
+    clear: both;
+    opacity: 0;
+    height: 0;
+    visibility: visible;
+    transition: height 500ms ease-in-out 0s, visibility 500ms ease-in-out 500ms;
+    &.isVisible {
+      opacity: 1;
+      height: auto;
+      visibility: none;
+      overflow: hidden;
+      transition: height 500ms ease-in-out 0s, visibility 500ms ease-in-out 500ms;
+    }
+    & > .col {
+      padding-bottom: 2rem;
+    }
+  }
+}

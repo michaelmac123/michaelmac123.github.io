@@ -1,0 +1,45 @@
+.hr {
+  &-theme {
+    border-color: $themeGray;
+  }
+  &-text {
+    border: 0;
+    height: 1.5em;
+    line-height: 1em;
+    margin: 5px 0;
+    opacity: .8;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    &:before {
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: $themeDarkBlue;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+    &:after {
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      background-color: transparent;
+      color: $themeDarkBlue;
+      content: attr(data-content);
+      display: inline-block;
+      font-size: 5rem;
+      line-height: 0.15em;
+      padding: 0 .5em;
+      position: relative;
+    }
+  &.text-color-gray {
+    &:before {
+      background: $themeGray;
+    }
+    &:after {
+      color: $themeGray;
+    }
+  }
+  }
+}

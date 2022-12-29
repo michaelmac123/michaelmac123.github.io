@@ -1,0 +1,48 @@
+.btn {
+  $speed: 300;
+  @include prefix(transition, all #{$speed}ms, o ms moz webkit);
+  @include prefix(border-radius, 3px, o ms moz webkit);
+  color: $white;
+  font:{
+    family: $Montserrat;
+    size: 18px;
+    size: 1.5rem;
+    weight: 300;
+  }
+  display: inline-block;
+  outline: none;
+  padding: 10px 25px;
+  text-decoration: none;
+  &:hover {
+    @include prefix(transition, all #{$speed}ms, o ms moz webkit);
+  }
+  &.with--shadow {
+    @include prefix(box-shadow, 0 0 5px rgba($themeDarkBlue, .5), o ms moz webkit);
+  }
+}
+.btn:visited, .btn:focus {
+  @include prefix(box-shadow, none, o ms moz webkit);
+  outline: none;
+
+}
+.btn-default {
+  @include basic_btn($themeGray);
+}
+.btn-blue {
+  @include basic_btn($themeBlue);
+  &.invert {
+    @include basic_btn_invert($themeBlue);
+  }
+}
+.btn-orange {
+ @include basic_btn($themeOrange);
+  &.invert {
+    @include basic_btn_invert($themeOrange);
+  }
+}
+.btn-empty {
+  @include empty_btn($themeDarkBlue);
+}
+.btn-short {
+  padding: .25rem 1rem;
+}

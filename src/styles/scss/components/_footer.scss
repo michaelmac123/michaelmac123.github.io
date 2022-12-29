@@ -1,0 +1,81 @@
+.footer {
+  &-text {
+    color: $themeDarkBlue;
+    display: inline-block;
+  }
+  &-nav {
+    text-align: center;
+    padding: 5px 0 10px 0;
+  }
+  &-mm-logo {
+    height: auto;
+    margin-right: .5rem;
+    width: 40px;
+    g {
+      fill: $themeDarkBlue;
+    }
+  }
+  &-social {
+    display: inline-block;
+    padding: 20px 0 10px 0;
+    color: $themeDarkBlue;
+    vertical-align: middle;
+    li{
+      &:first-of-type {
+        font-weight: 700;
+      }
+    }
+    a {
+      color: $themeDarkBlue;
+      display: inline-block;
+      font-weight: 300;
+      vertical-align: middle;
+      &.footer-social-icon{
+        background:{
+          color: transparent;
+          position: 0 0;
+          repeat: no-repeat;
+          size: contain;
+        }
+        display: inline-block;
+        height: 45px;
+        transition: all 350ms;
+        width:45px;
+        vertical-align: middle;
+        &.ico-Twitter {
+          background:{
+            image: url('../../images/icons/ico-Twitter.svg');
+          }
+        }
+        &.ico-Instagram {
+          background:{
+            image: url('../../images/icons/ico-Instagram.svg');
+          }
+        }
+        &.ico-LinkedIn {
+          background:{
+            image: url('../../images/icons/ico-LinkedIn.svg');
+          }
+        }
+        g {
+          fill: $themeDarkBlue;
+        }
+      }
+      &:hover {
+        color: $themeSubtleBlue;
+        &.ico-Twitter {
+          background-image: url('../../images/icons/ico-Twitter-Alt.svg');
+          transition: all 350ms;
+        }
+        &.ico-Instagram {
+          background-image: url('../../images/icons/ico-Instagram-Alt.svg');
+          transition: all 350ms;
+        }
+        &.ico-LinkedIn {
+          background-image: url('../../images/icons/ico-LinkedIn-Alt.svg');
+          transition: all 350ms;
+        }
+      }
+    }
+  }
+}
