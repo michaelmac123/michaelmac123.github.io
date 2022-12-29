@@ -37,7 +37,7 @@
     "devstart": "react-scripts start",
     "start": "node server.js",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "yarn build",
+    "predeploy": "npn run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
