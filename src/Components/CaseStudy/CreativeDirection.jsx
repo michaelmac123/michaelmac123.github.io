@@ -19,19 +19,19 @@ class CreativeDirection extends React.Component {
   render() {
     const content = [
       { Link: '/case-studies/loving-with-food',
-        Image: require("../../images/caseStudies/LovingWithFood-Hero.png"),
+        Image: "../../images/caseStudies/LovingWithFood-Hero.png",
         Title: 'Loving with Food',
         ImgClass: 'smallImage',
         Content: 'Direct to consumer, meal kit delivery system that would celebrate life\'s moments.'
       },
       { Link: '/case-studies/calls-leads-feature',
-        Image: require('../../images/caseStudies/BeccasRestaurant-hero.png'),
+        Image: '../../images/caseStudies/BeccasRestaurant-hero.png',
         Title:'Becca\'s Restaurant',
         Content:'Branding for a new restaurant launch.',
         Color:'#e6f8e5'
       },
       { Link: '/case-studies/creative-projects',
-        Image: require('../../images/caseStudies/Campaigns-Hero.png'),
+        Image: '../../images/caseStudies/Campaigns-Hero.png',
         Title: 'Creative Direction',
         Content: 'A collection of assorted creative.',
         Color: '#dbdae9'

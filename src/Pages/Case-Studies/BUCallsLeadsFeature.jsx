@@ -23,7 +23,7 @@ class BUCallsLeadsFeature extends React.Component {
                   <p>From a business perspective, and with a production desktop version in use, the VP of Sales requested that the mobile design follow that version’s functionality. In addition, for simplicity, the development team requested that the design pull from the current components with a focus on responsive design.</p>
                 </div>
                 <div className="col-sm-10 offset-sm-1">
-                  <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-discovery-1.png')}></img></p>
+                  <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-discovery-1.png'}></img></p>
                 </div>
                 <div className="col-sm-10 offset-sm-1">
                   <h5>Research</h5>
@@ -39,7 +39,7 @@ class BUCallsLeadsFeature extends React.Component {
                     <p>For lead submissions, the lead would originate from emails sent to the business email associated with the account. Calls would follow the same flow if the call was converted to a form. In the case of a warm transfer the call would go straight to the business phone.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-flows-1.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-flows-1.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -51,7 +51,7 @@ class BUCallsLeadsFeature extends React.Component {
                     <p>With so much information being displayed on the desktop version, I followed accepted design patterns, and decided that the design may need to incorporate a high-level view with a link to a more detailed description.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-ideation-1.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-ideation-1.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -59,7 +59,7 @@ class BUCallsLeadsFeature extends React.Component {
                     <p>The first round of designs were very basic, and followed the paper prototypes. The immediate reaction from the user group was a strong dislike of the additional click to expand the details, and the long page list full of redundant information.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-ideation-3.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-ideation-3.png'}></img></p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
                     <p>We progressed from the original design to a simpler card with a responsive design that would adapt from the desktop version. With these three designs, I built out the first prototypes and began testing concepts with our internal teams.</p>
@@ -74,13 +74,13 @@ class BUCallsLeadsFeature extends React.Component {
                     <p>The second and third round of iterations included the use of a card style design pattern that would work responsively between mobile and desktop layouts. This allowed the mobile version to show a detailed call or lead on the mobile screen, and addressed the additional click issue.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-prototype-1.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-prototype-1.png'}></img></p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
                     <p>Using Invision Studio, I added the basic interactions and began testing amongst the external user group that I'd set up for new feature testing. <a href="https://projects.invisionapp.com/prototype/PROTOTYPE-BU-calls-leads-cjrauf29b01bdzo01kwahndco/play/5467833e" rel="noopener noreferrer" target="_blank">View prototype</a></p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/BU-Calls-prototype-2.gif')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/BU-Calls-prototype-2.gif'}></img></p>
                   </div>
                 </div>
               </div>
@@ -107,7 +107,7 @@ class BUCallsLeadsFeature extends React.Component {
             <CaseStudyHeader
               CsTitle = "Project: Calls & Leads Feature"
               CsSubtitle = "Fully integrate business user dashboard with calls & leads acceptance functionality."
-              CsHero = {require('../../images/caseStudies/BU-Calls-Hero-2.png')}
+              CsHero = {'../../images/caseStudies/BU-Calls-Hero-2.png'}
             />
             <CaseStudySection content={content} />
             <CaseStudies />

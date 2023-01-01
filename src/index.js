@@ -1,29 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery';
-import 'popper.js';
 import 'bootstrap';
-
-import React from 'react'
-import { render } from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
-import WebFont from 'webfontloader';
-import './styles/css/index.css'
-import App from './Components/App.jsx'
-import registerServiceWorker from './registerServiceWorker'
-
-WebFont.load({
-  google: {
-    families:
-      ['Montserrat:100,300,500,700', 'Rokkitt:300,500', 'sans-serif'],
-  }
-});
+import './styles/scss/index.scss';
+import ScrollToTop from "./Components/ScrollToTop";
+import App from './Components/App';
+import reportWebVitals from './reportWebVitals';
 
 
-render((
-  <Router>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <ScrollToTop />
     <App />
-  </Router>
-  ), document.getElementById('root')
-)
+  </BrowserRouter>
+);
 
-registerServiceWorker()
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

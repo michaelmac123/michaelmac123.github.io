@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { Link } from 'react-router-dom'
 
 const dynamicStyle = props =>
@@ -30,6 +30,7 @@ const dynamicStyle = props =>
 const CaseStudyCardContainer = styled.div `
   a {
     color: #212529;
+    text-decoration:none;
     &:hover {
       color: #212529;
       text-decoration: none;

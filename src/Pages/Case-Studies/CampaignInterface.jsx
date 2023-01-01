@@ -33,7 +33,7 @@ class CampaignInterface extends React.Component {
                     <p>Quick proto-personas maintained focus on the user, and prevented deviating by the non-user stakeholders from the agreed upon design goals, and grounded our user flow.</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Persona_ Call_Center.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Persona_ Call_Center.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -41,7 +41,7 @@ class CampaignInterface extends React.Component {
                     <p>Texts about the flow chart</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/calls-flow-v2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/calls-flow-v2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ class CampaignInterface extends React.Component {
                     <p>Quick proto-personas maintained focus on the user, and prevented deviating by the non-user stakeholders from the agreed upon design goals, and grounded our user flow.</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Persona_ Call_Center.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Persona_ Call_Center.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -61,7 +61,7 @@ class CampaignInterface extends React.Component {
                     <p>Texts about the flow chart</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/calls-flow-v2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/calls-flow-v2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ class CampaignInterface extends React.Component {
                     <p>Quick proto-personas maintained focus on the user, and prevented deviating by the non-user stakeholders from the agreed upon design goals, and grounded our user flow.</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Persona_ Call_Center.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Persona_ Call_Center.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -81,7 +81,7 @@ class CampaignInterface extends React.Component {
                     <p>Texts about the flow chart</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/calls-flow-v2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/calls-flow-v2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ class CampaignInterface extends React.Component {
                     <p>Quick proto-personas maintained focus on the user, and prevented deviating by the non-user stakeholders from the agreed upon design goals, and grounded our user flow.</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Persona_ Call_Center.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Persona_ Call_Center.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -101,7 +101,7 @@ class CampaignInterface extends React.Component {
                     <p>Texts about the flow chart</p>
                   </div>
                   <div className="col-sm-7">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/calls-flow-v2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/calls-flow-v2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ class CampaignInterface extends React.Component {
             <CaseStudyHeader
               CsTitle = "Project: Pay-Per-Click Campaigns Interface"
               CsSubtitle = "Landing page generator designed for rapid deployment of theme-based PPC campaigns."
-              CsHero = {require('../../images/caseStudies/Campaigns-Hero.png')}
+              CsHero = {'../../images/caseStudies/Campaigns-Hero.png'}
             />
             <CaseStudySection content={content} />
             <CaseStudies />

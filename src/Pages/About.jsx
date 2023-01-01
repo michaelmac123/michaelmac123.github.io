@@ -13,7 +13,7 @@ class About extends React.Component {
         title="Michael McMillan"
         subtitle="People focused user experience design leader and strategist, producing elegant designs to meet business objectives, create thoughtful experiences focused on people centric solutions. Empathic mentor that thrives in cultivating teams and driving growth."
         headerList={[
-            <ul className="header-list">
+            <ul className="header-list" key="header-list-1">
               <li>Team Leadership – Leading and mentoring a multidisciplinary team of 50+ designers and consultants in a fully remote environment including teams within the US and India.</li>
               <li>Design Thinking – Problem solving through discovery and creative approach to identify quick wins and recognize failure fast to define best in class products and design.</li>
               <li>Innovative Solutions – Telling stories that help people fall in love with a product or brand by focusing on meaningful experiences that drive engagement and creates stickiness.</li>
@@ -25,7 +25,7 @@ class About extends React.Component {
             <SectionTitleContainer
                 title="Leadership Philosophy"
                 content={[
-                  <div key="1"><p>Why do I love to lead designers and a design organization?</p>
+                  <div key="4"><p>Why do I love to lead designers and a design organization?</p>
 
                   <ol className="about-ordered-list">
                     <li>The impact the design team can have on a company’s direction.</li>

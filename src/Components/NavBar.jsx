@@ -40,17 +40,17 @@ class NavBar extends React.Component {
         <div className="nav-banner-container">
           <div className={this.state.isTop ? 'logos' : ' logos min'}>
             <h1>
-              <NavLink exact to="/">Michael McMillan</NavLink>
+              <NavLink end to="/">Michael McMillan</NavLink>
             </h1>
-              <NavLink exact to="/" className="logo2">Michael McMillan</NavLink>
+              <NavLink end to="/" className="logo2">Michael McMillan</NavLink>
           </div>
           <nav className={navClass.join(' ')}>
             <div className="nav-container">
               <div className="menu-top-right-container">
                 <ul className="nav-list" id="menu-top-right">
-                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={1} exact to="/case-studies" >Case Studies</NavLink></li>
-                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={2} exact to="/experience" >Experience</NavLink></li>
-                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={3} exact to="/" >About</NavLink></li>
+                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={1} key={1} end to="/case-studies" >Case Studies</NavLink></li>
+                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={2} key={2} end to="/experience" >Experience</NavLink></li>
+                  <li className="nav-item"><NavLink onClick={this.toggle.bind(this)} eventkey={3} key={3} end to="/" >About</NavLink></li>
                 </ul>
               </div>
             </div>

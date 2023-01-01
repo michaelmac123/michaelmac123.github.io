@@ -44,17 +44,17 @@
         vertical-align: middle;
         &.ico-Twitter {
           background:{
-            image: url('../../images/icons/ico-Twitter.svg');
+            image: url($ico-Twitter);
           }
         }
         &.ico-Instagram {
           background:{
-            image: url('../../images/icons/ico-Instagram.svg');
+            image: url($ico-Instagram);
           }
         }
         &.ico-LinkedIn {
           background:{
-            image: url('../../images/icons/ico-LinkedIn.svg');
+            image: url($ico-LinkedIn);
           }
         }
         g {
@@ -64,15 +64,15 @@
       &:hover {
         color: $themeSubtleBlue;
         &.ico-Twitter {
-          background-image: url('../../images/icons/ico-Twitter-Alt.svg');
+          background-image: url($ico-Twitter-alt);
           transition: all 350ms;
         }
         &.ico-Instagram {
-          background-image: url('../../images/icons/ico-Instagram-Alt.svg');
+          background-image: url($ico-Instagram-alt);
           transition: all 350ms;
         }
         &.ico-LinkedIn {
-          background-image: url('../../images/icons/ico-LinkedIn-Alt.svg');
+          background-image: url($ico-LinkedIn-alt);
           transition: all 350ms;
         }
       }

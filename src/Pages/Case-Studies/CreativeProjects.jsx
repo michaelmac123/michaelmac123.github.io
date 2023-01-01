@@ -10,7 +10,7 @@ class CreativeProjects extends React.Component {
       { title: "Campaigns Dashboard",
         text:<div>
               <div className="col-sm-6 offset-sm-3">
-                <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Campaigns-Hero.png')}></img></p>
+                <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Campaigns-Hero.png'}></img></p>
               </div>
               <div className="col-sm-10 offset-sm-1">
                 <h5>Goal</h5>
@@ -21,13 +21,13 @@ class CreativeProjects extends React.Component {
                 <p><span>UX Designer & Project Manager</span>I was solely responsible for UX, UI and visual design for this project. Including follow up user testing, competitive research, delivering hi-fidelity prototypes, and supplying the development team with a working HTML/CSS layout.</p>
               </div>
               <div className="col-sm-10 offset-sm-1">
-                  <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Campaigns-Main-1.png')}></img></p>
+                  <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Campaigns-Main-1.png'}></img></p>
                 </div>
             </div>},
       { title: "Affiliates Onboarding",
         text:<div>
               <div className="col-sm-6 offset-sm-3">
-                <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Affiliates-Onboarding-Hero.png')}></img></p>
+                <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Affiliates-Onboarding-Hero.png'}></img></p>
               </div>
               <div className="col-sm-10 offset-sm-1">
                 <h5>Goal</h5>
@@ -38,7 +38,7 @@ class CreativeProjects extends React.Component {
                 <p><span>UX Designer & Visual Designer</span>I was solely responsible for UX, UI and visual design for this project. Including user discovery, delivering hi-fidelity prototypes, and converting them to functioning visuals.</p>
               </div>
               <div className="col-sm-10 offset-sm-1">
-                  <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Affiliates-Onboarding-Main-1.png')}></img></p>
+                  <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Affiliates-Onboarding-Main-1.png'}></img></p>
                 </div>
             </div>}
     ]
@@ -49,7 +49,7 @@ class CreativeProjects extends React.Component {
             <CaseStudyHeader
               CsTitle = "Creative Direction"
               CsSubtitle = "Assorted Creative"
-              CsHero = {require('../../images/caseStudies/AdditionalProjects-Hero.png')}
+              CsHero = {'../../images/caseStudies/AdditionalProjects-Hero.png'}
             />
             <CaseStudySection content={content} />
             <CaseStudies />

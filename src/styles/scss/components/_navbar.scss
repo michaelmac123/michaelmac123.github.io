@@ -20,7 +20,7 @@
     .logos {
       h1 {
         background:{
-          image: url('../../images/icons/mm-logo.svg');
+          image: url($logo);
           size: 35px 35px;
           repeat: no-repeat;
         }
@@ -54,7 +54,7 @@
 
       .logo2 {
         background:{
-          image: url('../../images/icons/mm-logo-invert.svg');
+          image: url($logo-alt);
           size: 35px 35px;
           repeat: no-repeat;
         }

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import {
+  Routes,
+  Route
+} from 'react-router-dom'
 
-import ScrollToTop from './ScrollToTop'
 import Home from '../Pages/Home'
 import About from '../Pages/About'
 import Experience from '../Pages/Experience'
@@ -19,30 +20,18 @@ class Main extends React.Component {
   render() {
     return(
       <main>
-        <ScrollToTop>
-          <Route render={({ location }) => (
-            <TransitionGroup>
-              <CSSTransition
-                key={location.key}
-                timeout={300}
-                classNames='fade'
-              >
-              <Switch location={location}>
-                <Route exact path='/' component={About}/>
-                <Route exact path='/experience' component={Experience}/>
-                <Route exact path='/case-studies' component={Home}/>
-                <Route exact path='/case-studies/call-center-dashboard' component={CallCenterDashboard}/>
-                <Route exact path='/case-studies/calls-leads-feature' component={BUCallsLeadsFeature}/>
-                <Route exact path='/case-studies/additional-projects' component={AdditionalProjects}/>
-                <Route exact path='/case-studies/advertiser-onboarding' component={AdvertiserOnboarding}/>
-                <Route exact path='/case-studies/campaign-interface' component={CampaignInterface}/>
-                <Route exact path='/case-studies/creative-direction' component={CreativeProjects}/>
-                <Route exact path='/case-studies/loving-with-food' component={LovingWithFood}/>
-              </Switch>
-              </CSSTransition>
-            </TransitionGroup>
-          )}/>
-        </ScrollToTop>
+        <Routes>
+          <Route path='/' element={<About />}/>
+          <Route path='/experience' element={<Experience />}/>
+          <Route path='/case-studies' element={<Home />}/>
+          <Route path='/case-studies/call-center-dashboard' element={<CallCenterDashboard />}/>
+          <Route path='/case-studies/calls-leads-feature' element={<BUCallsLeadsFeature />}/>
+          <Route path='/case-studies/additional-projects' element={<AdditionalProjects />}/>
+          <Route path='/case-studies/advertiser-onboarding' element={<AdvertiserOnboarding />}/>
+          <Route path='/case-studies/campaign-interface' element={<CampaignInterface />}/>
+          <Route path='/case-studies/creative-direction' element={<CreativeProjects />}/>
+          <Route path='/case-studies/loving-with-food' element={<LovingWithFood />}/>
+        </Routes>
       </main>
     )
   }

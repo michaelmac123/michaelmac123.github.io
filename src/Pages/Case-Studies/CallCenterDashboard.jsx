@@ -33,7 +33,7 @@ class CallCenterDashboard extends React.Component {
                     <p>Quick proto-personas maintained focus on the user, and prevented deviating by the non-user stakeholders from the agreed upon design goals, and grounded our user flow. This allowed us to have a focused user to reference for all decisions made during the design process.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/Persona_ Call_Center.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/Persona_ Call_Center.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -41,7 +41,7 @@ class CallCenterDashboard extends React.Component {
                     <p>With a basic direction, I created the foundation for the user flow and defined the steps a call representative would follow once they answered the call.</p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/calls-flow-v2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/calls-flow-v2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ class CallCenterDashboard extends React.Component {
                 </div>
                 <div className='row align-items-start'>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/call-center-ideation-1-1-1.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/call-center-ideation-1-1-1.png'}></img></p>
                   </div>
                   <div className="col-sm-10 offset-sm-1">
                     <p>A few quick sketches allowed me to discover a major omission that would not have been fleshed out until the development cycle started.</p>
@@ -72,7 +72,7 @@ class CallCenterDashboard extends React.Component {
                 </div>
                 <div className='row align-items-center'>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/call-center-prototyping-1.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/call-center-prototyping-1.png'}></img></p>
                   </div>
                 </div>
                 <div className='row align-items-center'>
@@ -82,7 +82,7 @@ class CallCenterDashboard extends React.Component {
                 </div>
                 <div className='row align-items-center'>
                   <div className="col-sm-10 offset-sm-1">
-                    <p className='text-center'><img alt="Temp Title" src={require('../../images/caseStudies/call-center-prototyping-2.png')}></img></p>
+                    <p className='text-center'><img alt="Temp Title" src={'../../images/caseStudies/call-center-prototyping-2.png'}></img></p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ class CallCenterDashboard extends React.Component {
             <CaseStudyHeader
               CsTitle = "Project: Call Center Dashboard"
               CsSubtitle = "Real time, call center dashboard connecting live callers to eLocal advertising partners."
-              CsHero = {require('../../images/caseStudies/Calls-Center-Hero.png')}
+              CsHero = {'../../images/caseStudies/Calls-Center-Hero.png'}
             />
             <CaseStudySection content={content} />
             <CaseStudies />

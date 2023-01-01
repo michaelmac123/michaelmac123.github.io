@@ -3,20 +3,29 @@
   border: none;
   bottom: 5%;
   display: inline-block;
+  opacity: .7;
   padding: 0;
   position: fixed;
   right: 5%;
+  transition: opacity, 1s;
   z-index: 10;
   &:focus {
     outline: none;
   }
+  &:hover {
+    opacity: 1;
+  }
+  &.hide {
+    opacity: 0;
+    transition: opacity, 1s;
+    &:hover {
+      cursor: default;
+      opacity: 0;
+    }
+  }
   #IconScrollTop {
     fill: $themeSubtleBlue;
     height: 45px;
-    opacity: .7;
     width: 45px;
-    &:hover {
-      opacity: 1;
-    }
   }
 }

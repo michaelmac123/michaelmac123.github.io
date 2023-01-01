@@ -14,7 +14,6 @@ $md: 768px;
 $lg: 992px;
 $xl: 1440px;
 
-//Fonts
 $sansFontFamily:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $Montserrat:        "Montserrat", $sansFontFamily;
 // $Rokkitt:            "Rokkitt", $sansFontFamily;
@@ -31,3 +30,15 @@ $themeSubtleBlue: mix($white, $themeDarkBlue, 30%);
 $themeGray: #919ba1;
 $themeRed: #A02525;
 $themeOrange: #D13E1F;
+
+$logo: '/images/icons/mm-logo.svg';
+$logo-alt: '/images/icons/mm-logo-alt.svg';
+
+$ico-Twitter: '/images/icons/ico-Twitter.svg';
+$ico-Twitter-alt: '/images/icons/ico-Twitter-alt.svg';
+
+$ico-Instagram: '/images/icons/ico-Instagram.svg';
+$ico-Instagram-alt: '/images/icons/ico-Instagram-alt.svg';
+
+$ico-LinkedIn: '/images/icons/ico-LinkedIn.svg';
+$ico-LinkedIn-alt: '/images/icons/ico-LinkedIn-alt.svg';
