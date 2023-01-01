@@ -1,7 +1,7 @@
 {
   "name": "mm-ux",
   "version": "0.1.0",
-  "homepage": "https://michaelmcmillan.me/",
+  "homepage": "http://michaelmcmillan.me/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
